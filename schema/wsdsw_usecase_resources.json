@@ -1,0 +1,73 @@
+[
+  {
+    "name": "usecase_full_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "resource_category",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "resource_key",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "resource_sub_key",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "resource_value",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "active_flag",
+    "type": "BOOL",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "comments",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INT64",
+    "mode": "REQUIRED"
+  },
+    {
+    "name": "source",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "last_ts",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+
+

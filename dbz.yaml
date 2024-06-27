@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dbz-gke
+  labels:
+    name: debezium
+spec:
+  replicas: 1
+  serviceName: debezium
+  selector:
+    matchLabels:
+      name: debezium
+  template:
+    metadata:
+      labels:
+        name: debezium
+        version: v1
+    spec:
+      containers:
+        - name: debezium
+          image: debezium/server:latest
+          env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: "/tmp/credentials/key.json"
+          volumeMounts:
+            - name: debezium-config-volume
+              mountPath: /debezium/conf
+            - name: debezium-data-volume
+              mountPath: /debezium/data
+            - name: dbz-key
+              mountPath: /tmp/credentials
+      volumes:
+        - name: debezium-config-volume
+          configMap:
+            name: debezium
+        - name: dbz-key
+          secret:
+            secretName: dbz-key 
+
+  volumeClaimTemplates:
+    - metadata:
+        name: debezium-data-volume
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        storageClassName: "premium-rwo"
+        resources:
+          requests:
+            storage: 10Gi
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: debezium
+  labels:
+    app: debezium
+data:
+  application.properties: |-
+      debezium.sink.type=pubsub
+      debezium.sink.pubsub.project.id=emr42-426806
+      debezium.source.connector.class=io.debezium.connector.postgresql.PostgresConnector
+      debezium.source.offset.storage.file.filename=data/offsets.dat
+      debezium.source.offset.flush.interval.ms=0
+      debezium.source.database.hostname=34.118.236.11
+      debezium.source.database.port=5432
+      debezium.source.database.user=postgres
+      debezium.source.database.password=test123
+      debezium.source.database.dbname=postgres
+      debezium.source.topic.prefix=ukprod
+      debezium.source.plugin.name=pgoutput
+      debezium.source.transforms=unwrap
+      debezium.source.table.include.list=starburst_prd.query_user_group,starburst_prd.query_tables,starburst_prd.completed_queries,protaldswb_dev.wsdsw_request,protaldswb_dev.wsdsw_usecase_req_info,protaldswb_dev.wsdsw_usecase_resources,protaldswb_dev.wsdsw_user_list,protaldswb_dev.wsdsw_user_req_info,inventory.biac_grant
+      debezium.source.transforms=Reroute,unwrap
+      debezium.source.transforms.Reroute.type=io.debezium.transforms.ByLogicalTableRouter
+      debezium.source.transforms.Reroute.topic.regex=ukprod(.*)
+      debezium.source.transforms.Reroute.topic.replacement=topic$1
+      debezium.source.transforms.unwrap.type=io.debezium.transforms.ExtractNewRecordState
+      debezium.source.transforms.unwrap.add.fields=op,name,db,schema,table,source.ts_ms
+      debezium.source.transforms.unwrap.delete.handling.mode=rewrite
+      debezium.source.key.converter.schemas.enable=false
+      debezium.source.value.converter.schemas.enable=false

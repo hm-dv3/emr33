@@ -1,0 +1,88 @@
+[
+  {
+    "name": "request_id",
+    "type": "INT64",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "request_type",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "request_content",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "request_flow",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "requester",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "created_timestamp",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "updated_timestamp",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "status",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "comments",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "request_viewers",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+

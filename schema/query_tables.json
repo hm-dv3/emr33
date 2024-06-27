@@ -1,0 +1,73 @@
+[
+  {
+    "name": "query_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "catalog_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "schema_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "table_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "physical_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "physical_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "is_output",
+    "type": "BOOL",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+

@@ -1,0 +1,288 @@
+[
+  {
+    "name": "query_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "catalog",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "principal",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "user_agent",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "client_info",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "source",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "environment",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "remote_client_address",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "server_version",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "usr",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "query_state",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "query",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "query_plan",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "total_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "total_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "output_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "output_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "written_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "written_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "cpu_time_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "wall_time_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "queued_time_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "peak_user_memory_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "peak_total_non_revocable_memory_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "peak_task_user_memory",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "peak_task_total_memory",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "physical_input_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "physical_input_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "internal_network_bytes",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "internal_network_rows",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "cumulative_memory",
+    "type": "FLOAT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "completed_splits",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "plan_node_stats_and_costs",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "stage_gc_statistics",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "cpu_time_distribution",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "operator_summaries",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "resource_waiting_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "analysis_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "execution_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "create_time",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "end_time",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "accessed_metadata",
+    "type": "JSON",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "planning_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "failure_info",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "update_type",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "scheduled_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "query_type",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "cumulative_system_memory",
+    "type": "FLOAT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "stages",
+    "type": "JSON",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+

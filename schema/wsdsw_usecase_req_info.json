@@ -1,0 +1,167 @@
+[
+  {
+    "name": "usecase_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "usecase_description",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "usecase_full_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "request_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "organization_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "pre_reviewer",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "organization_approvers",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "usecase_owner",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "delegates",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "country_region_entity",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "lob",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "dept_func",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "dsw_tesseract_project",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "active_flag",
+    "type": "BOOL",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "creation_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "last_update_time",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "customized_mount_flag",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "defaultValueExpression": "false"
+  },
+  {
+    "name": "access_dv_flag",
+    "type": "BOOL",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "data_visa",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "wdm_jira_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "business_justification",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "wdac_regional_analytics_access",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "defaultValueExpression": "false"
+  },
+  {
+    "name": "taiwan_flag",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "defaultValueExpression": "false"
+  },
+  {
+    "name": "hase_flag",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "defaultValueExpression": "false"
+  },
+  {
+    "name": "downstream_app_starburst_access",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "defaultValueExpression": "false"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

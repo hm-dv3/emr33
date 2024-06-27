@@ -1,0 +1,73 @@
+[
+  {
+    "name": "id",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "subject_role_id",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "action",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "entity",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "allow",
+    "type": "BOOL",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "grant_option",
+    "type": "BOOL",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "category",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__op",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__db",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__schema",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__table",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__source_ts_ms",
+    "type": "INT64",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "__deleted",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
+
